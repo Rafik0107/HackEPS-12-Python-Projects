@@ -1,0 +1,41 @@
+# Normal Python artefacts
+__.py[co]
+__pycache__/
+*.py[coc]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+
+# Jupyter
+.ipynb_checkpoints/
+.benchmarks/
+
+# Distribution / packaging
+*.egg-info/
+.installed.cfg
+dist/
+build/
+sdist/
+wheelhouse/
+
+# Testing
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS / misc
+.DS_Store
+Thumbs.db
+*.log

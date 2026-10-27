@@ -1,0 +1,4 @@
+# Python 3.10+
+
+# Dependances compatibles (NumPy à jour).
+numpy

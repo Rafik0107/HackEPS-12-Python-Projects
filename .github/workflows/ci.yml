@@ -1,0 +1,60 @@
+name: CI — format, lint and test all 12 projects
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project: [
+          01_astar_robot_navigation,
+          02_pid_temperature_controller,
+          03_kalman_sensor_tracking,
+          04_robot_arm_kinematics,
+          05_pgm_image_edge_detection,
+          06_anomaly_detection,
+          07_kmeans_clustering,
+          08_vibration_frequency_analysis,
+          09_production_job_scheduler,
+          10_imu_sensor_fusion,
+          11_ecg_peak_detection,
+          12_warehouse_route_optimizer,
+        ]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r ${{ matrix.project }}/requirements.txt
+          pip install black ruff pytest
+
+      - name: Format (Black)
+        run: black --check ${{ matrix.project }}
+
+      - name: Lint (Ruff)
+        run: ruff check ${{ matrix.project }}
+
+      - name: Run tests
+        run: python -m unittest discover -s ${{ matrix.project }}/tests -v
+
+      - name: Run examples
+        run: cd ${{ matrix.project }} && python main.py
+
+      - name: Validation report
+        run: echo "OK — ${{ matrix.project }} is format-checked, linted and tested."
