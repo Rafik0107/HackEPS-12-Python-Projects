@@ -1,0 +1,36 @@
+{
+  "plan": [
+    {
+      "job": "cut",
+      "machine": 0,
+      "start": 0.0,
+      "end": 8.0
+    },
+    {
+      "job": "polish",
+      "machine": 1,
+      "start": 0.0,
+      "end": 6.0
+    },
+    {
+      "job": "drill",
+      "machine": 2,
+      "start": 0.0,
+      "end": 5.0
+    },
+    {
+      "job": "inspect",
+      "machine": 2,
+      "start": 5.0,
+      "end": 8.0
+    },
+    {
+      "job": "pack",
+      "machine": 1,
+      "start": 6.0,
+      "end": 8.0
+    }
+  ],
+  "makespan": 8.0,
+  "lower_bound": 8.0
+}

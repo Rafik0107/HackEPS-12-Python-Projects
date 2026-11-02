@@ -1,0 +1,6 @@
+{
+  "true_positives": 10,
+  "false_positives": 0,
+  "anomalies": 10,
+  "normal_samples": 100
+}

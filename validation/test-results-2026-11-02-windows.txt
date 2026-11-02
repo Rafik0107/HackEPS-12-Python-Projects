@@ -1,0 +1,127 @@
+
+01_astar_navigation
+test_invalid (__main__.ProjectTests.test_invalid) ... ok
+test_obstacle_path_matches_bfs (__main__.ProjectTests.test_obstacle_path_matches_bfs) ... ok
+test_same_cell (__main__.ProjectTests.test_same_cell) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.037s
+
+OK
+
+02_pid_control
+test_convergence_and_saturation (__main__.ProjectTests.test_convergence_and_saturation) ... ok
+test_invalid (__main__.ProjectTests.test_invalid) ... ok
+test_unreachable_setpoint_remains_bounded (__main__.ProjectTests.test_unreachable_setpoint_remains_bounded) ... ok
+test_zero_gains (__main__.ProjectTests.test_zero_gains) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.341s
+
+OK
+
+03_kalman_tracking
+test_improves_noisy_measurements (__main__.ProjectTests.test_improves_noisy_measurements) ... ok
+test_invalid (__main__.ProjectTests.test_invalid) ... ok
+test_missing (__main__.ProjectTests.test_missing) ... ok
+test_velocity_and_covariance (__main__.ProjectTests.test_velocity_and_covariance) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.179s
+
+OK
+
+04_arm_kinematics
+test_inverse_roundtrip (__main__.ProjectTests.test_inverse_roundtrip) ... ok
+test_jacobian_finite_difference (__main__.ProjectTests.test_jacobian_finite_difference) ... ok
+test_singular_and_unreachable (__main__.ProjectTests.test_singular_and_unreachable) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.159s
+
+OK
+
+05_edge_detection
+test_constant_has_no_edges (__main__.ProjectTests.test_constant_has_no_edges) ... ok
+test_invalid (__main__.ProjectTests.test_invalid) ... ok
+test_transpose_symmetry (__main__.ProjectTests.test_transpose_symmetry) ... ok
+test_vertical_step (__main__.ProjectTests.test_vertical_step) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.159s
+
+OK
+
+06_anomaly_detection
+test_constant_feature (__main__.ProjectTests.test_constant_feature) ... ok
+test_invalid (__main__.ProjectTests.test_invalid) ... ok
+test_outliers_and_no_training_leakage (__main__.ProjectTests.test_outliers_and_no_training_leakage) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.151s
+
+OK
+
+07_clustering_lab
+test_invalid (__main__.ProjectTests.test_invalid) ... ok
+test_known_clusters_and_descent (__main__.ProjectTests.test_known_clusters_and_descent) ... ok
+test_reproducible_and_k_one (__main__.ProjectTests.test_reproducible_and_k_one) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.166s
+
+OK
+
+08_vibration_analysis
+test_damping_and_frequency (__main__.ProjectTests.test_damping_and_frequency) ... ok
+test_invalid (__main__.ProjectTests.test_invalid) ... ok
+test_undamped_analytic_solution (__main__.ProjectTests.test_undamped_analytic_solution) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.211s
+
+OK
+
+09_production_scheduler
+test_invalid (__main__.ProjectTests.test_invalid) ... ok
+test_jobs_once_no_overlap (__main__.ProjectTests.test_jobs_once_no_overlap) ... ok
+test_known_optimum (__main__.ProjectTests.test_known_optimum) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+
+10_imu_fusion
+test_bias_reduction (__main__.ProjectTests.test_bias_reduction) ... ok
+test_invalid (__main__.ProjectTests.test_invalid) ... ok
+test_stationary_roll (__main__.ProjectTests.test_stationary_roll) ... ok
+test_wrap_boundary (__main__.ProjectTests.test_wrap_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.166s
+
+OK
+
+11_ecg_analysis
+test_flat_signal (__main__.ProjectTests.test_flat_signal) ... ok
+test_invalid (__main__.ProjectTests.test_invalid) ... ok
+test_known_heart_rates (__main__.ProjectTests.test_known_heart_rates) ... ok
+test_refractory (__main__.ProjectTests.test_refractory) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.080s
+
+OK
+
+12_warehouse_routes
+test_empty_and_unreachable (__main__.ProjectTests.test_empty_and_unreachable) ... ok
+test_exact_against_permutations (__main__.ProjectTests.test_exact_against_permutations) ... ok
+test_obstacles_and_path (__main__.ProjectTests.test_obstacles_and_path) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+
+All 12 project suites passed.
